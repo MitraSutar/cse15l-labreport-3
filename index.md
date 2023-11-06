@@ -45,3 +45,5 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUn
     return newArray;
   }
 ```
+**Why this works**
+testReversed is broken because the newArray is never actually modified, so the method just changes all the values of the initial array to 0. This fix works because newArray is modified to be the actual reversal instead of just sitting there, and newArray is returned as the correct output. 
