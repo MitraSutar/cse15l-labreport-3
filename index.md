@@ -69,7 +69,7 @@ This command checks through all the lines in a text file, and displays the lines
 
 -l
 
-grep -v "insert string here" *
+grep -l "insert string here" *
 ![Image](labthree6.png)
 ![Image](labthree7.png)
 
